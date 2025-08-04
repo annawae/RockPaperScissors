@@ -42,7 +42,14 @@ function game(){
 game();
 }
 
-for(let i=0; i<5; i++){
+function start(){
+const rounds = document.getElementById("rounds");
+const roundsNum = parseInt(rounds.value);
+for(let i=0; i<roundsNum; i++){
     playGame();
 }
+}
+
+const startButton = document.getElementById("startButton");
+startButton.addEventListener("click", start);
 
