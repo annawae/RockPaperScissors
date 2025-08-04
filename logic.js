@@ -1,5 +1,7 @@
+function playGame(){
+
 function getUserChoice(){
-    let Uchoice = prompt("Enter rock, paper or scissors!");
+    let Uchoice = prompt("Enter rock, paper or scissors!").toLowerCase();
     return Uchoice;
 }
 
@@ -36,4 +38,11 @@ function game(){
     }
 }
 
+
 game();
+}
+
+for(let i=0; i<5; i++){
+    playGame();
+}
+
